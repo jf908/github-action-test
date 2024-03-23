@@ -1,0 +1,14 @@
+{
+  "name": "github-action-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts/update.mjs",
+  "scripts": {
+    "update-file": "node scripts/update.mjs"
+  },
+  "keywords": [],
+  "author": "jf908",
+  "devDependencies": {
+    "fs-extra": "^11.2.0"
+  }
+}
