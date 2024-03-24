@@ -1,5 +1,7 @@
 name: Update data
 
+on: workflow_dispatch
+
 jobs:
   execute:
     runs-on: ubuntu-latest
