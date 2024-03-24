@@ -21,14 +21,6 @@ jobs:
       - name: Update data
         run: node scripts/update.mjs
 
-      - name: Commit files
-        run: |
-          git config --local user.email "github-action@users.noreply.github.com"
-          git config --local user.name "GitHub Action"
-          git commit -m "Update data" -a
-
-      - name: Push changes
-        uses: ad-m/github-push-action@master
+      - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+          commit_message: Update data
